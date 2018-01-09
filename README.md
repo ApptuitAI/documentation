@@ -1,4 +1,7 @@
 # Documentation for apptuit.ai
+[![Travis](https://img.shields.io/travis/ApptuitAI/documentation.svg)](https://travis-ci.org/ApptuitAI/documentation/)
+[![license](https://img.shields.io/github/license/ApptuitAI/documentation.svg)](https://github.com/ApptuitAI/documentation/blob/master/LICENSE)
+[![Gemnasium](https://img.shields.io/gemnasium/ApptuitAI/documentation.svg)](https://gemnasium.com/github.com/ApptuitAI/documentation)
 
 Welcome to the GitHub repo for our documentation.
 Our docs are completely open source and we deeply appreciate contributions from our community!
