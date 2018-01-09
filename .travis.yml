@@ -7,12 +7,6 @@ cache:
 rvm:
 - 2.4
 
-install:
- - gem install jekyll bundler
-
-before_script:
- - bundle install
-
 script: bundle exec jekyll build
 
 after_script: bundle exec htmlproofer ./_site
