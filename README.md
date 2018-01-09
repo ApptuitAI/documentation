@@ -1,7 +1,7 @@
 # Documentation for apptuit.ai
 [![Travis](https://img.shields.io/travis/ApptuitAI/documentation.svg)](https://travis-ci.org/ApptuitAI/documentation/)
-[![license](https://img.shields.io/github/license/ApptuitAI/documentation.svg)](https://github.com/ApptuitAI/documentation/blob/master/LICENSE)
 [![Gemnasium](https://img.shields.io/gemnasium/ApptuitAI/documentation.svg)](https://gemnasium.com/github.com/ApptuitAI/documentation)
+[![license](https://img.shields.io/github/license/ApptuitAI/documentation.svg)](https://github.com/ApptuitAI/documentation/blob/master/LICENSE)
 
 Welcome to the GitHub repo for our documentation.
 Our docs are completely open source and we deeply appreciate contributions from our community!
@@ -43,24 +43,54 @@ For more involved changes, you can clone the repo to your desktop, submit your c
 
 If you would like to preview your changes locally before committing to GitHub, you can run the site locally.
 
+#### Initial Setup
 You need `Ruby` and `gem` before starting. Install Ruby 2.4 by following [these instructions](https://www.ruby-lang.org/en/documentation/installation/). Then:
 
 ```bash
 # install bundler
 gem install bundler
 
-# install required packages
-bundle install
-
 # clone the project
 git clone https://github.com/ApptuitAI/documentation.git
 cd documentation
 
-# run jekyll with dependencies
-bundle exec jekyll serve
+# install required packages
+bundle install
 ```
 
-Documentation is available at https://localhost:4000
+#### Potential setup issues
+ * If you see the following error on windows:
+ > Could not open library 'libcurl.dll': The specified module could not be found.  
+
+  * Download [libcurl.zip](https://curl.haxx.se/gknw.net/7.40.0/dist-w64/curl-7.40.0-winssl-sspi-zlib-static-bin-w64.zip)
+  * Extract `libcurl.dll` file from the downloaded zip and save it into your `ruby\bin` directory
+ *  
+
+#### Running the documentation server
+
+Launch the documentation server using the following command:
+ ```bash
+ # run jekyll with dependencies
+ bundle exec jekyll serve
+ ```
+
+Once the server is ready, you will see the following message:
+```
+Server address: http://127.0.0.1:4000/
+Server running... press ctrl-c to stop.
+```
+
+You can now access the documentation site locally by pointing your browser to https://localhost:4000
+
+#### Validating your local changes
+Once you have previewed your changes in the browser, run the following commands to verify all your changes before committing:
+```bash
+# generate all content
+bundle exec jekyll build
+
+# verify there are no broken links
+bundle exec htmlproofer ./_site
+```
 
 
 ## LICENSE
