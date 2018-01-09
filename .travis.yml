@@ -1,4 +1,9 @@
 language: ruby
+cache:
+  bundler: true
+  directories:
+   - /home/travis/.rvm/
+
 rvm:
 - 2.4
 
@@ -8,7 +13,9 @@ install:
 before_script:
  - bundle install
 
-script: bundle exec jekyll build && bundle exec htmlproofer ./_site
+script: bundle exec jekyll build
+
+after_script: bundle exec htmlproofer ./_site
 
 env:
   global:
