@@ -81,4 +81,4 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - README.md
-  - LICENCE
+  - LICENSE
