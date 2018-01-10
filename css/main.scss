@@ -30,4 +30,5 @@ $full-width-break: $nav-width + ($space * 4) + $content-max-width;
 @import "tables";
 @import "layout";
 
-@import 'font-awesome';
+$fa-font-path: "/fonts/font-awesome";
+@import "font-awesome/font-awesome";
