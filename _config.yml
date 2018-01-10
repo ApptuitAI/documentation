@@ -7,6 +7,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
+git_address: https://github.com/ApptuitAI/documentation
 google_analytics_key:
 show_full_navigation: true
 

@@ -72,7 +72,123 @@ body {
 
 	@media (min-width: $mobile-break) {
 		margin-top: 0;
+		position: absolute;
+		left: $nav-width;
+		right: $space;
 	}
+
+	@media (min-width: ($content-max-width+(2*($space+$nav-width)))) {
+		display: inline-block;
+		margin-top: 0;
+		position: absolute;
+		left: $nav-width;
+		right: $nav-width + (2 * $space);
+	}
+}
+
+.page-aside  {
+	display: none;
+	font-family: "Open Sans", sans-serif;
+	line-height: 1;
+	margin: 0;
+
+	@media (min-width:  ($content-max-width+(2*($space+$nav-width)))) {
+		background-color: $aside-background-color;
+		width: $aside-width;
+		display: inline-block;
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		z-index: -1;
+		padding: 0 ($space + 5) $space;
+		padding-top: 55px;
+
+		&::after {
+			content: "";
+			position: fixed;
+			width: $aside-width;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			z-index: -1;
+			background-color: $aside-background-color;
+		}
+	}
+
+	.aside-actions {
+		display: block;
+		list-style: none;
+		padding: 0;
+		margin-bottom: 15px;
+		font-size: 1.4rem;
+
+		li {
+			padding: 5px 0;
+		}
+
+		.fa {
+			padding-right: 5px;
+			width: 1em;
+		}
+
+		a {
+			color: $brand-colour;
+			text-decoration: none;
+		}
+	}
+
+	.aside-toc {
+		#page-toc-title {
+			font-weight: 600;
+			font-size: 1.4rem;
+		}
+
+		ul {
+			display: block;
+			list-style: none;
+			padding-left: 20px;
+
+			li {
+				margin: 0;
+				padding: 0;
+			}
+
+			li::before {
+				content: "\25AA";
+				color: #666;
+				display: inline-block;
+				width: 0.75em;
+				margin-left: -1em
+			}
+
+			a {
+				color: #666;
+				text-decoration: none;
+				font-size: 1.4rem;
+				// padding: $space / 2 0 $space / 2 $space * 2;
+				padding: 0;
+			}
+
+			a:hover {
+				color: $brand-colour;
+			}
+		}
+
+		> ul {
+			padding-top: 5px;
+		}
+	}
+}
+
+.page-footer{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	text-align: center;
+	background: black;
+	color: white;
 }
 
 header {

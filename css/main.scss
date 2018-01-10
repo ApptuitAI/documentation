@@ -17,10 +17,14 @@ $nav-header-height: 60px;
 $nav-background-color: #f5f5f5;
 $nav-width: 300px;
 
+$aside-background-color: #fbfbfb;
+$aside-width: 200px;
+
 $space: 20px;
 
-$mobile-break: 700px;
-$full-width-break: $nav-width + ($space * 4) + $content-max-width;
+$mobile-break: 800px;
+$full-width-break: $nav-width + ($space * 4) + $content-max-width + $aside-width;
+
 
 @import "mixins";
 @import "normalize";

@@ -90,6 +90,25 @@
 			</article>
 		</section>
 
+		<aside class="page-aside">
+			<ul class="aside-actions">
+				{% assign edit_url = site.git_address | append: "/edit/master/" | append: page.path %}
+				{% assign issue_url = site.git_address | append: "/issues/new?body=File:" | append: page.path %}
+				<li><a href="{{ edit_url }}"><i class="fa fa-pencil-square-o"></i>Edit this page</a></li>
+				<li><a href="{{ issue_url }}"><i class="fa fa fa-question"></i>Request a change</a></li>
+			</ul>
+			{% unless page.notoc %} {% assign my_min = page.toc_min | default: site.toc_min | default: 3 %} {% assign my_max = page.toc_max | default: site.toc_max | default: 4 %} {% assign my_name = page.url | default: "unnamed" %}
+				<div class="aside-toc">
+					<span id="page-toc-title">On this page:</span>
+				{% include md_page_toc.html html=content sanitize=true class="inline_toc" id="my_toc" toc_min=my_min toc_max=my_max page_name=my_name %}
+				</div>
+			</div>
+			{% endunless %}
+		</aside>
+		<!--footer class="page-footer">
+			<span class="footer-copyright">©2018 Agilx, Inc.</span>
+		</footer -->
+
 		<script>
 			document.getElementById("open-nav").addEventListener("click", function () {
 				document.body.classList.toggle("nav-open");
