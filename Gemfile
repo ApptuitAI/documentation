@@ -25,6 +25,7 @@ group :jekyll_plugins do
   gem "jekyll-sitemap"
   gem "jekyll-redirect-from"
   gem "jekyll-seo-tag"
+  gem 'jekyll-font-awesome-sass'
   gem "html-proofer"
 end
 

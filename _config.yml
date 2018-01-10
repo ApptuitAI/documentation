@@ -35,6 +35,10 @@ plugins:
   - jekyll-seo-tag
   - jekyll-feed
   - jekyll-redirect-from
+  - jekyll-font-awesome-sass
+
+font-awesome:
+  assets: true
 
 collections:
   docs:
