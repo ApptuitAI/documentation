@@ -11,7 +11,7 @@ order: 1
 
  1. Download and install latest version
     * Get the download link to latest .rpm package from the [Releases Page](https://github.com/ApptuitAI/xcollector/releases)  
-      ![](screenshots/DownloadRelease.png)
+      ![Releases page](/screenshots/xcollector/DownloadRelease.png)
     * Download the package using the copied link  
       `wget https://github.com/ApptuitAI/xcollector/releases/download/apptuit-v0.8.0/xcollector-0.8.0-1.x86_64.rpm`
     * Install the collector  
@@ -34,7 +34,7 @@ order: 1
 
 1. Download and install latest version
    * Get the download link to latest .deb package from the [Releases Page](https://github.com/ApptuitAI/xcollector/releases)  
-     ![](screenshots/DownloadRelease.png)
+     ![Releases page](/screenshots/xcollector/DownloadRelease.png)
    * Download the package using the copied link  
      `wget https://github.com/ApptuitAI/xcollector/releases/download/apptuit-v0.8.0/xcollector_0.8.0-1_amd64.deb`
    * Install the collector  
