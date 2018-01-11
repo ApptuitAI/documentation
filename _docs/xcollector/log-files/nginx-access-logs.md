@@ -45,5 +45,5 @@ http {
 ###### If your current access log format is NOT supported out of the box:
  1. Verify that the following fields are enabled in the log:  
    `$request $status $request_length $bytes_sent $request_time $upstream_response_time`
- 1. Create a pattern that matches your log file format as described in [CustomGrokPatterns](CustomGrokPatterns)
+ 1. Create a pattern that matches your log file format as described in [CustomGrokPatterns](../custom-grok-patterns)
  1. Update the correct patterns in `/etc/xcollector/grok_nginx.yml` file under the section `grok: additional_patterns:`.

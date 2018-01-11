@@ -22,8 +22,8 @@ order: 1
  1. XCollector adds a default "host" tag to all the metrics. You can add additional global tags (like environment="production" or data_center="us-east-1a" etc) to all the metrics generated on this instance. To add global tags:
     * `vi /etc/xcollector/xcollector.yml`
     * Un-comment the tags section and enable the tags relevant to your environment
- 1. If you are running NGINX, verify log file format: [NGiNXAccessLog](NGiNXAccessLog)
- 1. If you are running Tomcat, change your log configuration as described in: [TomcatAccessLog](TomcatAccessLog)
+ 1. If you are running NGINX, verify log file format: [NGiNXAccessLog](../log-files/nginx-access-logs)
+ 1. If you are running Tomcat, change your log configuration as described in: [TomcatAccessLog](../log-files/tomcat-access-logs)
  1. Start the collector:  
     `service xcollector start`
  1. In case of trouble with XCollector on startup look at:  
@@ -50,8 +50,8 @@ order: 1
 1. XCollector adds a default "host" tag to all the metrics. You can add additional global tags (like environment="production" or data_center="us-east-1a" etc) to all the metrics generated on this instance. To add global tags:
    * `vi /etc/xcollector/xcollector.yml`
    * Un-comment the tags section and enable the tags relevant to your environment
-1. If you are running NGINX, verify log file format: [NGiNXAccessLog](NGiNXAccessLog)
-1. If you are running Tomcat, change your log configuration as described in: [TomcatAccessLog](TomcatAccessLog)
+1. If you are running NGINX, verify log file format: [NGiNXAccessLog](../log-files/nginx-access-logs)
+1. If you are running Tomcat, change your log configuration as described in: [TomcatAccessLog](../log-files/tomcat-access-logs)
 1. Start the collector:  
    `sudo service xcollector start`
 1. In case of trouble with XCollector on startup look at:  
