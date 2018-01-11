@@ -2,6 +2,7 @@
 title: Installing XCollector
 category: XCollector
 order: 1
+redirect_from: /xcollector/
 ---
 ### Pre-requisites
  * An [apptuit.ai](https://apptuit.ai) account
